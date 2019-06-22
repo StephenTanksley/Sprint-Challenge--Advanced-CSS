@@ -60,6 +60,7 @@
     @media @mobile {
       flex-direction: column-reverse;
       margin-top: 3rem;
+      padding-bottom: 1.5rem;
     }
 
     .walk-text {
@@ -138,12 +139,29 @@ h1 {
 
 .sky {
   @media @mobile {
-    display: none;
+    .invisible();
   }
 }
 
 .launch {
   @media @mobile {
-    display: none;
+    .invisible();
+  }
+}
+
+
+.btn {
+  .btn-mixin(33%, 12%, black, none, .6rem, white, 1.6rem, "Ubuntu", pointer);
+
+  @media @mobile {
+      .btn-mixin(100%, 5rem, black, none, .5rem, white, 1.6rem, "Ubuntu", pointer);
+      margin-bottom: .6rem;
+  }
+
+  //hover state
+  &:hover {
+      background-color: rgb(159, 180, 199);
+      color: rgb(0, 0, 0);
+      transition-duration: 0.3s;
   }
 }

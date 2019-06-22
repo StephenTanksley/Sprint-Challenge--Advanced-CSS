@@ -13,24 +13,12 @@
 }
 
 
-.btn {
-    .btn-mixin(33%, 12%, black, none, .6rem, white, 1.6rem, "Ubuntu", pointer);
-
-    @media @mobile {
-        .btn-mixin(100%, 5rem, black, none, .5rem, white, 1.6rem, "Ubuntu", pointer);
-        margin-bottom: 1rem;
-    }
-
-    //hover state
-    &:hover {
-        background-color: rgb(159, 180, 199);
-        color: rgb(0, 0, 0);
-        transition-duration: 0.3s;
-    }
-}
-
 .centered {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+}
+
+.invisible {
+    display: none;
 }
