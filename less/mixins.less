@@ -1,1 +1,35 @@
 // Mixins Here
+
+.btn-mixin (@width, @height, @bgcolor, @border, @border-radius, @color, @font-size, @cursor) {
+    width: @width;
+    height: @height;
+    background-color: @bgcolor;
+    border: @border;
+    border-radius: @border-radius;
+    color: @color;
+    font-size: @font-size;
+    cursor: @cursor;
+ 
+ }
+ 
+ .btn {
+    .btn-mixin(33%, 12%, black, none, .6rem, white, 1.6rem, pointer);
+ 
+    @media @mobile {
+        .btn-mixin(100%, 25%, black, none, .6srem, white, 1.6rem, pointer);
+        margin-bottom: 1rem;
+    }
+
+ //hover state
+    &:hover {
+        background-color: white;
+        color: teal;
+        transition-duration: 0.3s;
+    }
+ }
+ 
+ .mobile-center {
+    width: 80%;
+    margin: 0 auto;
+ }
+ 
