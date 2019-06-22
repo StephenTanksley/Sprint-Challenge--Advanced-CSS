@@ -1,6 +1,6 @@
 // Mixins Here
 
-.btn-mixin (@width, @height, @bgcolor, @border, @border-radius, @color, @font-size, @cursor) {
+.btn-mixin (@width, @height, @bgcolor, @border, @border-radius, @color, @font-size, @font-family, @cursor) {
     width: @width;
     height: @height;
     background-color: @bgcolor;
@@ -8,28 +8,31 @@
     border-radius: @border-radius;
     color: @color;
     font-size: @font-size;
+    font-family: @font-family;
     cursor: @cursor;
  
  }
  
  .btn {
-    .btn-mixin(33%, 12%, black, none, .6rem, white, 1.6rem, pointer);
+    .btn-mixin(33%, 12%, black, none, .6rem, white, 1.6rem, "Ubuntu", pointer);
  
     @media @mobile {
-        .btn-mixin(100%, 25%, black, none, .6srem, white, 1.6rem, pointer);
+        .btn-mixin(100%, 25%, black, none, .6srem, white, 1.6rem, "Ubuntu", pointer);
         margin-bottom: 1rem;
     }
 
  //hover state
     &:hover {
-        background-color: white;
-        color: teal;
+        background-color: rgb(159, 180, 199);
+        color: rgb(0, 0, 0);
         transition-duration: 0.3s;
     }
  }
  
- .mobile-center {
+ .centered {
     width: 80%;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
  }
  
