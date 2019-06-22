@@ -4,6 +4,8 @@
 
   .intro {
 
+    margin-top: 12rem;
+
     h2 {
       padding: 15px;
     }
@@ -15,6 +17,10 @@
     .header-img {
       width: 100%;
       border-radius: 1.5rem;
+
+      @media @mobile {
+        .centered();
+      }
     }
 
   }
@@ -122,16 +128,16 @@ h1 {
   flex-direction: column;
   width: 100%;
   .centered();
-}
+  position: fixed;
+  top: 0;
 
-// .header-img {
-//   width: 100%;
-//   border-radius: 1.5rem;
-// }
+  background-color: white;
+}
 
 .site-container {
   @media @mobile {
-    width: 90%;
+    width: 100%;
+    .centered();
   }
 }
 
