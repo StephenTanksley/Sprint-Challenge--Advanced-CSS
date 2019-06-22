@@ -210,6 +210,10 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .intro .header-img {
+  width: 100%;
+  border-radius: 1.5rem;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -310,10 +314,6 @@ h1 {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-}
-.header-img {
-  width: 100%;
-  border-radius: 1.5rem;
 }
 @media (max-width: 500px) {
   .site-container {

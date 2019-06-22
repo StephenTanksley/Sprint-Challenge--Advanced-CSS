@@ -12,6 +12,11 @@
       padding: 0 15px;
     }
 
+    .header-img {
+      width: 100%;
+      border-radius: 1.5rem;
+    }
+
   }
 
   .space-images {
@@ -66,9 +71,9 @@
     .walk-text {
       width: 50%;
 
-        @media @mobile {
-          width: 100%;
-        }
+      @media @mobile {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -119,10 +124,10 @@ h1 {
   .centered();
 }
 
-.header-img {
-  width: 100%;
-  border-radius: 1.5rem;
-}
+// .header-img {
+//   width: 100%;
+//   border-radius: 1.5rem;
+// }
 
 .site-container {
   @media @mobile {
@@ -154,14 +159,14 @@ h1 {
   .btn-mixin(33%, 12%, black, none, .6rem, white, 1.6rem, "Ubuntu", pointer);
 
   @media @mobile {
-      .btn-mixin(100%, 5rem, black, none, .5rem, white, 1.6rem, "Ubuntu", pointer);
-      margin-bottom: .6rem;
+    .btn-mixin(100%, 5rem, black, none, .5rem, white, 1.6rem, "Ubuntu", pointer);
+    margin-bottom: .6rem;
   }
 
   //hover state
   &:hover {
-      background-color: rgb(159, 180, 199);
-      color: rgb(0, 0, 0);
-      transition-duration: 0.3s;
+    background-color: rgb(159, 180, 199);
+    color: rgb(0, 0, 0);
+    transition-duration: 0.3s;
   }
 }
