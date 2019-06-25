@@ -34,13 +34,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    An adaptive website creates optimized layouts at fixed breakpoints whereas a responsive design will flow from the desktop version to the mobile version without fixed points.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile first design is going to focus the design of the site around what a mobile user would be needing and wanting to see when they interact with the site on a phone or tablet. The site would be optimized first for a mobile experience and then styled later for the greater space provided on a desktop.
+
+	Desktop-first design would design first for the full desktop viewport and then would pare down the website’s design to its bare bones for the mobile version. The mobile-first approach tends to promote a better user experience because it makes better use of the space available and focuses on the essentials first.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    Font-size: 62.5% allows us to use base-10 math when using responsive rem units. 62.5% of 16 (default font size on browsers) is 10. If we wanted to use font size 12, we could indicate font-size: 1.2 for example. Much easier than dividing 16/100 and then scaling up whenever we want to change a font size.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing is kinda like an interpreter. You tell the preprocessor what you want in more abstract terms and then it can very specifically translate what you meant into CSS which the browser can understand. This means you don't have to directly write every single line of CSS thus saving you time.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    Favorite concept is nesting, without a doubt. Nesting coupled with mixins. Being able to keep all of my styles within one heading is a godsend and it prevents me from having to write a bunch of unnecessary code. Keeps things readable.
+
+    Parametric mixins were a tricky concept for me at first. I understand the use of parametric mixins coupled with variables, but it took me a little while to get used to writing them out. I thought of them a little bit like functions in Javascript. The difference there is that in javascript you’d be passing in arguments and in LESS you’re passing in the names of parameters you’d like to modify.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -94,9 +111,9 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. //done//
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [ ] Add a viewport meta tag to the head of your index.html page //done//
 
 * [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
@@ -104,11 +121,11 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [ ] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins //Created .centered() and .invisible().
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles. //hyup. Done that.//
 
-* [ ]  Use at least 2 parameters to create your button
+* [ ]  Use at least 2 parameters to create your button //I've used so many parameters.//
 
 * [ ] Create a hover state that swaps the background color and font color of the base button styles.
 

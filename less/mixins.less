@@ -1,1 +1,25 @@
 // Mixins Here
+
+.btn-mixin (@width, @height, @bgcolor, @border, @border-radius, @color, @font-size, @font-family, @cursor) {
+    width: @width;
+    height: @height;
+    background-color: @bgcolor;
+    border: @border;
+    border-radius: @border-radius;
+    color: @color;
+    font-size: @font-size;
+    font-family: @font-family;
+    cursor: @cursor;
+}
+
+
+.centered {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.invisible {
+    display: none;
+}
